@@ -115,6 +115,42 @@
   .chatbody b { color:#f0d8be; }
   .locked { background:#3a2f24; border:1px dashed #6b5843; border-radius:12px; padding:14px 15px; font-size:13.5px; color:#f0d8be; margin-top:14px; line-height:1.5; }
   .proofnote { font-size:12px; color:#9b8e80; margin-top:16px; line-height:1.5; }
+
+  /* ===== DESKTOP (адаптив) ===== */
+  @media (min-width:860px){
+    .wrap { max-width:1120px; box-shadow:0 0 140px rgba(0,0,0,0.55); }
+    section { padding:90px 72px; }
+    h2 { font-size:46px; }
+
+    .hero { height:700px; }
+    .hero .inner { max-width:880px; margin:0 auto; padding:0 40px 72px; }
+    .hero h1 { font-size:62px; }
+    .hero .sub { font-size:18px; max-width:720px; margin-left:auto; margin-right:auto; }
+
+    .problem .plist { columns:2; column-gap:48px; }
+    .problem .plist li { break-inside:avoid; }
+    .problem .bridge { font-size:24px; max-width:840px; }
+
+    .sol { display:grid; grid-template-columns:1fr 1fr; column-gap:44px; align-items:start; }
+    .sol > .eyebrow, .sol > h2, .sol > .sub { grid-column:1 / -1; }
+    .sol > .sub { max-width:840px; }
+
+    .steps { display:grid; grid-template-columns:1fr 1fr; column-gap:48px; align-items:start; }
+    .steps > .eyebrow, .steps > h2 { grid-column:1 / -1; }
+
+    .split img { max-height:560px; object-fit:cover; }
+
+    .pcard { max-width:560px; margin-left:auto; margin-right:auto; }
+    .result .rlist { columns:2; column-gap:48px; }
+    .result .rlist li { break-inside:avoid; }
+
+    .faq { column-count:2; column-gap:56px; }
+    .faq > .eyebrow, .faq > .rule { column-span:all; }
+    .faq .q { break-inside:avoid; }
+
+    .final .inner { max-width:780px; margin:0 auto; padding:110px 40px; }
+    .final h2 { font-size:48px; }
+  }
 </style>
 </head>
 <body>
