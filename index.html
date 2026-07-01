@@ -124,9 +124,15 @@
   .case img { width:100%; display:block; }
   .casebody { padding:20px 22px; }
   .ctag { display:inline-block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; color:#b8895a; background:#f3e7d6; border-radius:30px; padding:6px 13px; margin-bottom:12px; }
-  .casebody p { font-size:14.5px; color:#4a4038; margin-bottom:9px; line-height:1.55; }
-  .casebody p:last-child { margin-bottom:0; }
   .casebody b { color:#2a221c; }
+  .cblock { margin-bottom:13px; }
+  .cblock > b { display:block; font-size:13px; letter-spacing:0.3px; margin-bottom:6px; color:#2a221c; }
+  .cblock ul { list-style:none; margin:0; }
+  .cblock li { position:relative; padding:3px 0 3px 15px; font-size:13.5px; color:#4a4038; line-height:1.5; }
+  .cblock li:before { content:""; position:absolute; left:2px; top:11px; width:5px; height:5px; border-radius:50%; background:#c8a982; }
+  .cblock p { font-size:13.5px; color:#4a4038; line-height:1.55; margin:0; }
+  .clocked { background:#f3e7d6; border:1px dashed #d9be9d; border-radius:12px; padding:12px 14px; font-size:12.5px; color:#6e6258; line-height:1.5; margin-top:2px; }
+  .clocked b { color:#2a221c; }
   .banote { font-size:12px; color:#9b8e80; margin-top:18px; line-height:1.5; }
 
   /* ===== DESKTOP (адаптив) ===== */
@@ -252,24 +258,39 @@
         <img src="case1.jpg" alt="Пример разбора">
         <div class="casebody">
           <div class="ctag">Отёки и тёмные круги</div>
-          <p><b>AI увидел:</b> отёчность и тёмные круги под глазами, признаки застоя лимфы, лёгкая краснота на скулах.</p>
-          <p><b>Что делать:</b> лимфодренажный самомассаж по утрам, режим сна и воды, уход с кофеином и витамином К.</p>
+          <div class="cblock"><b>🔬 Что вижу</b><ul>
+            <li>Под глазами: теневые круги, носослёзная борозда, отёчность к утру — застой лимфы.</li>
+            <li>Скулы: сосудистая реактивность, лёгкая краснота — намёк на обезвоженность.</li>
+            <li>Т-зона: расширенные поры, застой.</li>
+          </ul></div>
+          <div class="cblock"><b>🎯 Корень</b><p>Слабый лимфодренаж + нарушенный барьер и обезвоженность + задержка воды (сон, соль). Круги и отёки — следствие застоя, а не «просто усталость». Осветляющий крем бьёт по симптому, корень не трогает.</p></div>
+          <div class="clocked"><b>🔓 В Premium:</b> лимфодренажный протокол утро/вечер, восстановление барьера, уход с кофеином и вит. K, изнутри — вода/магний/железо под дефициты по анализам. Пошагово + динамика по фото + консьерж 24/7.</div>
         </div>
       </div>
       <div class="case">
         <img src="case2.jpg" alt="Пример разбора">
         <div class="casebody">
           <div class="ctag">Овал и упругость</div>
-          <p><b>AI увидел:</b> овал начинает мягко плыть, ранние носогубные, лёгкое снижение упругости и тонуса.</p>
-          <p><b>Что делать:</b> массаж и тейпирование зоны челюсти, работа с осанкой и лимфой, уход на поддержку коллагена.</p>
+          <div class="cblock"><b>🔬 Что вижу</b><ul>
+            <li>Овал: контур мягко плывёт, у линии челюсти теряется чёткость.</li>
+            <li>Носогубные: наметившееся углубление.</li>
+            <li>Средняя треть: лёгкая потеря объёма и упругости.</li>
+          </ul></div>
+          <div class="cblock"><b>🎯 Корень</b><p>Снижение синтеза коллагена и эластина + ослабленный мышечный тонус и лимфостаз + осанка (голова вперёд «роняет» овал). Контур плывёт системно — точечные кремы его не держат.</p></div>
+          <div class="clocked"><b>🔓 В Premium:</b> протокол на коллаген (ретиноид + пептиды), массаж и тейпирование челюсти, лимфодренаж, работа с осанкой, изнутри — коллаген/вит. D/омега под анализы. Пошагово + динамика + консьерж 24/7.</div>
         </div>
       </div>
       <div class="case">
         <img src="case3.jpg" alt="Пример разбора">
         <div class="casebody">
           <div class="ctag">Тон и пигментация</div>
-          <p><b>AI увидел:</b> слегка неровный тон, немного пигментации на скулах, тусклость, расширенные поры.</p>
-          <p><b>Что делать:</b> мягкие кислоты и ниацинамид, обязательный SPF, антиоксиданты; проверить дефициты (железо, витамин D).</p>
+          <div class="cblock"><b>🔬 Что вижу</b><ul>
+            <li>Скулы: очаги пигментации, неровный тон.</li>
+            <li>Кожа: тусклость, потеря сияния, расширенные поры в Т-зоне.</li>
+            <li>Светлый фототип с признаками фотовоздействия.</li>
+          </ul></div>
+          <div class="cblock"><b>🎯 Корень</b><p>Фотоповреждение + сбой обновления клеток + возможные гормональные и дефицитные триггеры пигмента. Пятна — следствие УФ и воспаления, а не «просто пигмент». Отбеливающий крем без SPF гоняет по кругу.</p></div>
+          <div class="clocked"><b>🔓 В Premium:</b> мягкие кислоты и ниацинамид, жёсткий SPF, антиоксиданты (вит. C), выравнивание тона, изнутри — проверка железа, вит. D, щитовидки. Пошагово + динамика по фото + консьерж 24/7.</div>
         </div>
       </div>
     </div>
