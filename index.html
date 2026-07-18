@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beyond Beauty — AI-консьерж молодости</title>
+<title>Beyond Beauty — AI-консьерж молодости | Бесплатный разбор лица по фото</title>
 <meta name="description" content="AI-консьерж молодости в Telegram. Загрузи селфи — получи разбор лица и план: уход, массаж, питание, добавки. Первый разбор бесплатно.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beyond Beauty — AI-консьерж молодости">
+<meta name="twitter:description" content="Моложе на несколько лет. Без пластики и уколов. Первый разбор лица по фото — бесплатно, в Telegram.">
+<meta name="twitter:image" content="https://beyondbeautyconcierge.ru/og.jpg">
+<link rel="canonical" href="https://beyondbeautyconcierge.ru/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta property="og:title" content="Beyond Beauty — AI-консьерж молодости">
 <meta property="og:description" content="Моложе на несколько лет. Без пластики и уколов. Первый разбор лица по фото — бесплатно, в Telegram.">
 <meta property="og:image" content="https://beyondbeautyconcierge.ru/og.jpg">
@@ -13,8 +22,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23b8895a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23fdf8f2' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap');
   * { margin:0; padding:0; box-sizing:border-box; }
+  @media (prefers-reduced-motion: no-preference){ html { scroll-behavior:smooth; } }
+  section { scroll-margin-top:64px; }
   body { font-family:'Manrope',sans-serif; color:#2a221c; background:#171009; background:radial-gradient(120% 60% at 50% 0%, #2c2016 0%, #171009 60%, #0f0b07 100%); background-attachment:fixed; line-height:1.55; -webkit-font-smoothing:antialiased; }
   .wrap { max-width:600px; margin:0 auto; background:#f7f1ea; box-shadow:0 0 130px rgba(0,0,0,0.55); min-height:100vh; }
   section { padding:60px 32px; }
@@ -29,7 +39,8 @@
   .micro { font-size:12.5px; color:#6e6258; margin-top:16px; letter-spacing:0.3px; }
 
   /* TOPBAR */
-  .topbar { position:absolute; top:0; left:0; right:0; z-index:5; display:flex; align-items:center; justify-content:space-between; padding:18px 32px; }
+  .topbar { position:absolute; top:0; left:0; right:0; z-index:60; }
+  .topbar-in { display:flex; align-items:center; justify-content:space-between; padding:18px 32px; max-width:1120px; margin:0 auto; }
   .brand { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600; color:#fdf8f2; letter-spacing:0.5px; text-decoration:none; }
   .nav { display:none; gap:26px; }
   .nav a { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#f0e6da; text-decoration:none; font-weight:600; }
@@ -176,11 +187,22 @@
     .btn:hover { transform:translateY(-2px); }
   }
 
+  /* MID CTA strip */
+  .midcta { background:#241c15; text-align:center; }
+  .midcta .t { font-family:'Cormorant Garamond',serif; font-size:30px; font-weight:600; line-height:1.15; color:#fdf8f2; }
+  .midcta .btn { margin-top:22px; }
+  .midcta .micro { color:#bdb0a0; }
+
   /* ===== DESKTOP (адаптив) ===== */
   @media (min-width:860px){
     .wrap { max-width:1120px; box-shadow:0 0 140px rgba(0,0,0,0.55); }
     section { padding:90px 72px; }
     h2 { font-size:46px; }
+
+    .topbar { position:fixed; transition:background .3s ease, box-shadow .3s ease; }
+    .topbar.scrolled { background:rgba(24,17,11,0.92); backdrop-filter:blur(8px); box-shadow:0 1px 0 rgba(255,255,255,0.06); }
+    .topbar.scrolled .topbar-in { padding-top:12px; padding-bottom:12px; }
+    .midcta .t { font-size:40px; }
 
     .hero { height:700px; }
     .nav { display:flex; }
@@ -218,21 +240,37 @@
     .final h2 { font-size:48px; }
   }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Beyond Beauty Premium","description":"AI-консьерж молодости в Telegram: анализ лица по фото, персональный план ухода, массажа, питания и добавок.","image":"https://beyondbeautyconcierge.ru/og.jpg","brand":{"@type":"Brand","name":"Beyond Beauty by ALETHEIA"},"offers":{"@type":"Offer","price":"1990","priceCurrency":"RUB","url":"https://beyondbeautyconcierge.ru/","availability":"https://schema.org/InStock"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Это точно конфиденциально?","acceptedAnswer":{"@type":"Answer","text":"Да. Фото и данные идут только на твой разбор. Мы их не публикуем и не передаём третьим лицам."}},
+{"@type":"Question","name":"Beyond Beauty заменяет врача или косметолога?","acceptedAnswer":{"@type":"Answer","text":"Нет и не претендует. Это умный помощник для ухода, привычек и осознанных решений о молодости. Диагнозов не ставит; при медицинских проблемах нужен врач."}},
+{"@type":"Question","name":"Это правда работает без пластики?","acceptedAnswer":{"@type":"Answer","text":"Речь про ежедневный уход, массаж, питание и добавки — то, что поддерживает молодость естественно. Это не операция, а система, которая помогает выглядеть моложе."}},
+{"@type":"Question","name":"Подойдёт для моего возраста?","acceptedAnswer":{"@type":"Answer","text":"Да. AI настраивает план под тебя: и профилактика в 25, и активный антивозраст после 40."}},
+{"@type":"Question","name":"Как подключить анализы крови?","acceptedAnswer":{"@type":"Answer","text":"Пришли фото или PDF результатов — AI учтёт их в плане. Нет анализов — начнём с фото и короткой анкеты."}},
+{"@type":"Question","name":"Нужно что-то устанавливать?","acceptedAnswer":{"@type":"Answer","text":"Нет. Всё работает прямо в Telegram. Никаких приложений и регистраций."}},
+{"@type":"Question","name":"А если не подойдёт?","acceptedAnswer":{"@type":"Answer","text":"Первый разбор бесплатный, а подписку защищает гарантия: не увидишь пользы за первый месяц — вернём деньги без вопросов."}}
+]}
+</script>
 </head>
 <body>
 <div class="wrap">
 
   <section class="hero" id="top">
-    <img src="hero.jpg" alt="" fetchpriority="high">
+    <img src="hero.jpg" alt="" width="810" height="1080" fetchpriority="high">
     <div class="scrim"></div>
-    <div class="topbar">
-      <a class="brand" href="#top">Beyond Beauty</a>
-      <nav class="nav">
-        <a href="#how">Как работает</a>
-        <a href="#cases">Разбор</a>
-        <a href="#price">Тариф</a>
-      </nav>
-      <a class="topcta" href="https://t.me/BeyondBeautyConcierge_bot?start=site" target="_blank" rel="noopener">Бесплатный разбор</a>
+    <div class="topbar" id="topbar">
+      <div class="topbar-in">
+        <a class="brand" href="#top">Beyond Beauty</a>
+        <nav class="nav">
+          <a href="#how">Как работает</a>
+          <a href="#cases">Разбор</a>
+          <a href="#price">Тариф</a>
+        </nav>
+        <a class="topcta" href="https://t.me/BeyondBeautyConcierge_bot?start=site" target="_blank" rel="noopener">Бесплатный разбор</a>
+      </div>
     </div>
     <div class="inner">
       <div class="eyebrow">Создано компанией ALETHEIA · AI-консьерж молодости</div>
@@ -264,7 +302,7 @@
     <div class="fcard"><div class="rn">III</div><div><b>Всегда рядом</b><span>Отвечает за минуты, ведёт динамику. В Telegram, без записи и очередей.</span></div></div>
   </section>
 
-  <section class="split"><img src="split.jpg" alt="" loading="lazy"></section>
+  <section class="split"><img src="split.jpg" alt="" width="1038" height="1080" loading="lazy" decoding="async"></section>
 
   <section class="steps" id="how">
     <div class="eyebrow">Как это работает</div>
@@ -306,7 +344,7 @@
     <p class="sub">Одно фото — и бот показывает, что происходит с лицом и что с этим делать. Три примера, у каждого своя задача.</p>
     <div class="casegrid">
       <div class="case">
-        <img src="case1.jpg" alt="Пример разбора" loading="lazy">
+        <img src="case1.jpg" alt="Пример разбора: отёки и тёмные круги" width="860" height="860" loading="lazy" decoding="async">
         <div class="casebody">
           <div class="ckicker">Кейс 01 · Экспресс-разбор по фото</div>
           <div class="ctitle">Отёки и тёмные круги</div>
@@ -321,7 +359,7 @@
         </div>
       </div>
       <div class="case">
-        <img src="case2.jpg" alt="Пример разбора" loading="lazy">
+        <img src="case2.jpg" alt="Пример разбора: овал и упругость" width="860" height="860" loading="lazy" decoding="async">
         <div class="casebody">
           <div class="ckicker">Кейс 02 · Экспресс-разбор по фото</div>
           <div class="ctitle">Овал и упругость</div>
@@ -336,7 +374,7 @@
         </div>
       </div>
       <div class="case">
-        <img src="case3.jpg" alt="Пример разбора" loading="lazy">
+        <img src="case3.jpg" alt="Пример разбора: тон и пигментация" width="860" height="860" loading="lazy" decoding="async">
         <div class="casebody">
           <div class="ckicker">Кейс 03 · Экспресс-разбор по фото</div>
           <div class="ctitle">Тон и пигментация</div>
@@ -352,6 +390,12 @@
       </div>
     </div>
     <p class="banote">AI-анализ по фото. Косметологический разбор, не медицинский диагноз.</p>
+  </section>
+
+  <section class="midcta">
+    <p class="t">Хочешь такой же разбор<br>своего лица?</p>
+    <a class="btn gold" href="https://t.me/BeyondBeautyConcierge_bot?start=site" target="_blank" rel="noopener">Разобрать моё лицо бесплатно</a>
+    <p class="micro">Бесплатно · 3 минуты · Прямо в Telegram</p>
   </section>
 
   <section class="price" id="price">
@@ -407,7 +451,7 @@
   </section>
 
   <section class="final">
-    <img src="hero.jpg" alt="" loading="lazy">
+    <img src="hero.jpg" alt="" width="810" height="1080" loading="lazy" decoding="async">
     <div class="scrim"></div>
     <div class="inner">
       <h2>Начни выглядеть моложе<br>уже сейчас</h2>
@@ -424,9 +468,13 @@
 <script>
 (function(){
   var bar=document.getElementById('stickyCta');
+  var top=document.getElementById('topbar');
   var hero=document.querySelector('.hero');
   if(bar&&hero&&'IntersectionObserver'in window){
-    new IntersectionObserver(function(e){ bar.classList.toggle('show', !e[0].isIntersecting); },{threshold:0.05}).observe(hero);
+    new IntersectionObserver(function(e){
+      bar.classList.toggle('show', !e[0].isIntersecting);
+      if(top){ top.classList.toggle('scrolled', !e[0].isIntersecting); }
+    },{threshold:0.05}).observe(hero);
   }
   if('IntersectionObserver'in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
